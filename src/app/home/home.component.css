@@ -19,5 +19,14 @@
 section div button:hover{
   background-color: aliceblue;
   color: black;
+}
 
+.social:hover{
+  background-image: linear-gradient(
+    #ecd29e,
+    #ece79e
+  );
+}
+mat-divider{
+  background-color: #fff;
 }
