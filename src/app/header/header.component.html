@@ -1,0 +1,29 @@
+<mat-card style="color: #fff;display: flex;justify-content: space-between;align-items: center;background-color: #424b53;padding:1.2vh;">
+    <mat-card-header style="display: flex;justify-content: center;align-items: center;">
+      <div mat-card-avatar>
+        <img style="width: 45px;height: 45px;z-index: 0;margin: 0;border-radius: 50%;" src="assets/image/Desktop.png">
+      </div>
+      <mat-card-subtitle style="color: #fff;margin: auto;">Lebzo Developper</mat-card-subtitle>
+    
+    </mat-card-header>
+    <button class="social" mat-icon-button aria-label="Example icon button with a home icon">
+      <mat-icon style="color: #fff">invert_colors</mat-icon>
+    </button>
+    <section id="menu" style="background-color: red;">
+      <button style="background-color: red;" class="social" mat-icon-button aria-label="Example icon button with a home icon">
+        <mat-icon style="color: #fff;">menu</mat-icon>
+      </button>
+    </section>
+    <section>
+      <div id="items-menu">
+        <button class="social" (click)="navigate_home()" mat-button>Home</button>
+        <button class="social" mat-button>Projects</button>
+        <button class="social" mat-button>About</button>
+        <button class="social" (click)="navigate_contact()" mat-button>Contact</button>
+        <button class="social" mat-icon-button aria-label="Example icon button with a home icon">
+          <mat-icon style="color: #fff;">search</mat-icon>
+        </button>
+      </div>
+    </section>
+  </mat-card>
+  

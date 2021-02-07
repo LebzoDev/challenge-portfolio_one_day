@@ -1,0 +1,10 @@
+mat-divider{
+    background-color: #fff;
+  }
+
+  .social:hover{
+    background-image: linear-gradient(
+      #ecd29e,
+      #ece79e
+    );
+  }

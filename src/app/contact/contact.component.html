@@ -1,0 +1,31 @@
+<app-header></app-header>
+<!--Content-->
+<section style="background-color: aqua;height: 80vh;">
+<mat-card fxFlex="50" style="display: flex;flex-direction: column;">
+    <section style="width: 100%;display: flex;justify-content: center;align-items: center;">
+        <img width="50%" src="assets/image/avatar_contact.svg">
+    </section>
+    <section>
+        If you have any contribution or suggestion for me or about this portfolio. 
+        I let you on the right part this form. 
+    </section>
+</mat-card>
+<mat-card fxFlex="50">
+    <section style="background-color: aquamarine;">
+        <mat-card style="height: 55vh;color: #ffffff;font-weight: bold;">
+            <mat-toolbar>Authentification Form</mat-toolbar>
+            <form fxLayout="stretch" fxLayout="column">
+                <mat-form-field style="background-color: red;">
+                    <input matInput id="login"  placeholder="username" formControlName="username">
+                </mat-form-field>
+                <mat-form-field>
+                    <input matInput id="pwd" type="password" placeholder="password" formControlName="password">
+                </mat-form-field>
+                <button mat-raised-button class="btn connecter"   type="submit">Connecter</button>
+              </form>      
+        </mat-card>
+    </section>
+</mat-card>
+</section>
+<!--End-->
+<app-footer></app-footer>

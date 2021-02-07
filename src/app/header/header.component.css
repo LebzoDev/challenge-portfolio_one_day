@@ -1,0 +1,44 @@
+
+.sidenav-container {
+    height: 100%;
+  }
+  #menu{
+    display: none;
+  }
+  .sidenav {
+    width: 200px;
+  }
+  
+  .sidenav .mat-toolbar {
+    background: inherit;
+  }
+  
+  .mat-toolbar.mat-primary {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+  }
+  section div button:hover{
+    background-color: aliceblue;
+    color: black;
+  }
+
+  .social:hover{
+    background-image: linear-gradient(
+      #ecd29e,
+      #ece79e
+    );
+  }
+ 
+  mat-divider{
+    background-color: #fff;
+  }
+  
+  @media only screen and (max-width:600px){
+    #items-menu{
+      display: none;
+    }
+    #menu{
+      display: contents;
+    }
+  }

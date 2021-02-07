@@ -2,7 +2,9 @@
 .sidenav-container {
   height: 100%;
 }
-
+#menu{
+  display: none;
+}
 .sidenav {
   width: 200px;
 }
@@ -27,6 +29,12 @@ section div button:hover{
     #ece79e
   );
 }
-mat-divider{
-  background-color: #fff;
+
+@media only screen and (max-width:600px){
+  #items-menu{
+    display: none;
+  }
+  #menu{
+    display: contents;
+  }
 }

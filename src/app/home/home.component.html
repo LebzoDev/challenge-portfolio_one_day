@@ -14,60 +14,18 @@
     <p>This is the primary content of the panel.</p>
   </mat-expansion-panel>
 </mat-accordion> -->
-<mat-card style="color: #fff;display: flex;justify-content: space-between;align-items: center;background-color: #424b53;padding:1.2vh;">
-  <mat-card-header style="display: flex;justify-content: center;align-items: center;">
-    <div mat-card-avatar>
-      <img style="width: 45px;height: 45px;z-index: 0;margin: 0;border-radius: 50%;" src="assets/image/Desktop.png">
-    </div>
-    <mat-card-subtitle style="color: #fff;margin: auto;">Lebzo Developper</mat-card-subtitle>
-  
-  </mat-card-header>
-
-  <section>
-    <div class="example-button-row">
-      <button class="social" mat-button>Projects</button>
-      <button class="social" mat-button>About</button>
-      <button class="social" mat-button>Contact</button>
-      <button class="social" mat-icon-button aria-label="Example icon button with a home icon">
-        <mat-icon style="color: #fff;">search</mat-icon>
-      </button>
-    </div>
-  </section>
-
-</mat-card>
+<app-header></app-header>
 <section style="width: 100%;position: relative;display: inline-block">
-  <img style="width: 100%;height: 70vh;z-index: 0;margin: 0;" src="assets/image/Desktop.png">
+  <img style="width: 100%;height: 80vh;z-index: 0;margin: 0;" src="assets/image/Desktop.png">
   <section style="top: 0;left:0;width: 100%;height: 100%;position: absolute;opacity: 0.3; background-image:
   radial-gradient(
     yellow,
     orange
   
   );">
-
   </section>
 </section>
-<footer style="background-color: #424b53;width: 100%;position: fixed;bottom: 0;margin: 0;display: flex;justify-content: center;">
-  <mat-list>
-    <mat-list-item style="display: flex;justify-content: center;align-items: center;">
-      <button class="social" mat-icon-button aria-label="Example icon button with a home icon">
-        <mat-icon style="color: #fff;">facebook</mat-icon>
-      </button>
-      <button class="social" mat-icon-button aria-label="Example icon button with a home icon">
-        <img src="assets/image/icons8-instagram.svg">
-      </button>
-      <button class="social" mat-icon-button aria-label="Example icon button with a home icon">
-        <img src="assets/image/icons8-twitter-squared-24.png">
-      </button>
-      <button class="social" mat-icon-button aria-label="Example icon button with a home icon">
-        <img  src="assets/image/icons8-linkedin.svg">
-      </button>
-      </mat-list-item>
-    <mat-divider></mat-divider>
-    <mat-list-item style="color: #fff;">©2021 developed by Lebou N DIEYE 2021</mat-list-item>
-  </mat-list>
-  
-</footer>
-
+<app-footer></app-footer>
 <!-- <mat-sidenav-container class="sidenav-container">
   <mat-sidenav  #drawer class="sidenav" fixedInViewport
       [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
