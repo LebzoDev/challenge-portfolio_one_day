@@ -6,22 +6,19 @@
       <mat-card-subtitle style="color: #fff;margin: auto;">Lebzo Developper</mat-card-subtitle>
     
     </mat-card-header>
-    <button class="social" mat-icon-button aria-label="Example icon button with a home icon">
-      <mat-icon style="color: #fff">invert_colors</mat-icon>
-    </button>
     <section id="menu" style="background-color: red;">
       <button style="background-color: red;" class="social" mat-icon-button aria-label="Example icon button with a home icon">
         <mat-icon style="color: #fff;">menu</mat-icon>
       </button>
     </section>
     <section>
-      <div id="items-menu">
-        <button class="social" (click)="navigate_home()" mat-button>Home</button>
-        <button class="social" mat-button>Projects</button>
-        <button class="social" mat-button>About</button>
-        <button class="social" (click)="navigate_contact()" mat-button>Contact</button>
+      <div id="items-menu" >
+        <button class="social" [routerLink]="['/']" [ngClass]="{'activate':home_activate}" (click)='home()' mat-button>Home</button>
+        <button class="social" [routerLink]="['/','project']" [ngClass]="{'activate':projects_activate}" (click)='projects()'  mat-button> Projects </button>
+        <button class="social" [routerLink]="['/','about']" [ngClass]="{'activate':about_activate}" (click)='about()' mat-button>About</button>
+        <button class="social" [routerLink]="['/','contact']" [ngClass]="{'activate':contact_activate}" (click)='contact()' mat-button>Contact</button>
         <button class="social" mat-icon-button aria-label="Example icon button with a home icon">
-          <mat-icon style="color: #fff;">search</mat-icon>
+          <mat-icon style="color: #fff">invert_colors</mat-icon>
         </button>
       </div>
     </section>

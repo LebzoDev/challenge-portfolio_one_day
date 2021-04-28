@@ -17,6 +17,7 @@ export class HomeComponent {
     );
 
     panelOpenState = false;
+    value_home:boolean=true;
   constructor(private breakpointObserver: BreakpointObserver) {}
 
 }

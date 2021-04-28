@@ -29,6 +29,13 @@
       #ece79e
     );
   }
+  .activate{
+    background-image: linear-gradient(
+      #ecd29e,
+      #ece79e
+    );
+    color: black;
+  }
  
   mat-divider{
     background-color: #fff;

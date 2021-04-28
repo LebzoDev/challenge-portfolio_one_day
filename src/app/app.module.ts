@@ -17,7 +17,11 @@ import {MatCardModule} from '@angular/material/card';
 import { ContactComponent } from './contact/contact.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
-import {MatFormFieldModule} from '@angular/material/form-field'; 
+import { MatInputModule } from '@angular/material/input';
+import {MatFormFieldModule} from '@angular/material/form-field';
+import { AboutComponent } from './about/about.component';
+import { ProjectComponent } from './project/project.component'; 
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -25,9 +29,12 @@ import {MatFormFieldModule} from '@angular/material/form-field';
     HomeComponent,
     ContactComponent,
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
+    AboutComponent,
+    ProjectComponent
   ],
   imports: [
+    FormsModule,
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
@@ -40,7 +47,8 @@ import {MatFormFieldModule} from '@angular/material/form-field';
     MatListModule,
     MatExpansionModule,
     MatCardModule,
-    MatFormFieldModule
+    MatFormFieldModule,
+    MatInputModule
   ],
   providers: [],
   bootstrap: [AppComponent]

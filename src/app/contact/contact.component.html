@@ -1,27 +1,38 @@
-<app-header></app-header>
+<app-header [contact_activate]="value_contact"></app-header>
 <!--Content-->
 <section style="background-color: aqua;height: 80vh;">
-<mat-card fxFlex="50" style="display: flex;flex-direction: column;">
+<mat-card  *ngIf="mobile" fxFlex="50" style="display: flex;flex-direction: column;">
+    <section  style="text-align: center;font-size: 1.2vw;font-weight: bold;width: 70%;margin: 3vh auto;">
+        If you have any contribution or suggestion for me or about this portfolio. 
+        I let you one form for exchanging on the right part. 
+    </section>
     <section style="width: 100%;display: flex;justify-content: center;align-items: center;">
         <img width="50%" src="assets/image/avatar_contact.svg">
     </section>
-    <section>
-        If you have any contribution or suggestion for me or about this portfolio. 
-        I let you on the right part this form. 
+    <section  style="background-color: #ecd39e;display: flex;justify-content: center;align-items: center; font-size: 1.2vw;font-weight: bold;width: 70%;margin: 3vh auto;">
+      Contact:leboundiayee123@gmail.com
     </section>
+    <section  style="text-align: center;font-size: 1.2vw;font-weight: bold;width: 70%;margin: 3vh auto;">
+       Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum aperiam vitae illo. Et quia repellendus illo, explicabo modi quibusdam assumenda deleniti nemo, consequuntur, minus dolores pariatur dignissimos dicta rem nisi?
+    </section>
+  
 </mat-card>
 <mat-card fxFlex="50">
-    <section style="background-color: aquamarine;">
+    <section >
         <mat-card style="height: 55vh;color: #ffffff;font-weight: bold;">
-            <mat-toolbar>Authentification Form</mat-toolbar>
+            <mat-toolbar style="background-color: #ecd39e;">Leave us a message here:</mat-toolbar>
+            <hr>
             <form fxLayout="stretch" fxLayout="column">
-                <mat-form-field style="background-color: red;">
-                    <input matInput id="login"  placeholder="username" formControlName="username">
+                <mat-form-field>
+                    <input matInput id="login"  placeholder="Nom complet">
                 </mat-form-field>
                 <mat-form-field>
-                    <input matInput id="pwd" type="password" placeholder="password" formControlName="password">
+                    <input matInput id="pwd" type="password" placeholder="Email">
                 </mat-form-field>
-                <button mat-raised-button class="btn connecter"   type="submit">Connecter</button>
+                <mat-form-field>
+                   <textarea matInput name="message" placeholder="Message"> </textarea>
+                </mat-form-field>
+                <button mat-raised-button class="btn connecter" style="background-color: #ecd39e;"   type="submit">Envoyer</button>
               </form>      
         </mat-card>
     </section>
